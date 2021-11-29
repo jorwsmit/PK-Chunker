@@ -17,6 +17,21 @@ chmod +x pk_chunker.sh
 
 ## Usage
 
+###### Get Session Id
+
+- Log into Salesforce
+- Open developer console
+- Degub log the reversed session Id
+  `sh SYSTEM.DEBUG('Session Id : ' +Userinfo.getSessionId().reverse()); `
+- Reverse the session Id with Excel
+  `sh =CONCAT(MID(A1,SEQUENCE(LEN(A1),,LEN(A1),-1),1)) `
+
+###### Run the PK Chunker
+
+- Open up terminal
+- CD into the directory
+- Run the chunker
+
 ```sh
 cd /PK\ Chunker/pk_chunker.sh
 ./pk_chunker.sh
