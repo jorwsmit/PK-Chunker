@@ -35,6 +35,8 @@ chmod +x pk_chunker.sh
 ```sh
 cd /PK\ Chunker/pk_chunker.sh
 ./pk_chunker.sh
+Enter your session Id
 *** Paste in a valid session Id ***
+Enter your org domain (examples: kah--qa, kah, kah--hhdev, kah2)
 *** Type in an org domain (ie kah) ***
 ```
