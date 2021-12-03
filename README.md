@@ -22,9 +22,9 @@ chmod +x pk_chunker.sh
 - Log into Salesforce
 - Open developer console
 - Degub log the reversed session Id
-  `sh SYSTEM.DEBUG('Session Id : ' +Userinfo.getSessionId().reverse()); `
+  `SYSTEM.DEBUG('Session Id : '+Userinfo.getSessionId().reverse()); `
 - Reverse the session Id with Excel
-  `sh =CONCAT(MID(A1,SEQUENCE(LEN(A1),,LEN(A1),-1),1)) `
+  `=CONCAT(MID(A1,SEQUENCE(LEN(A1),,LEN(A1),-1),1)) `
 
 ###### Run the PK Chunker
 
@@ -38,5 +38,5 @@ cd /PK\ Chunker/pk_chunker.sh
 Enter your session Id
 *** Paste in a valid session Id ***
 Enter your org domain (examples: kah--qa, kah, kah--hhdev, kah2)
-*** Type in an org domain (ie kah) ***
+*** Type in an org domain (i.e. kah) ***
 ```
